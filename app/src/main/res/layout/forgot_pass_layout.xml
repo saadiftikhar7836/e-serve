@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:fontFamily="@font/basiercircle_medium"
+            android:gravity="center"
+            android:text="@string/label_reset_pass"
+            android:textAllCaps="false"
+            android:textColor="@color/navy"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:autofillHints="null"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="@font/basiercircle_regular"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textNoSuggestions|textEmailAddress"
+            android:paddingStart="@dimen/_26sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_26sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:textColor="@color/navy"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heading" />
+
+
+        <TextView
+            android:id="@+id/btn_send_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_22sdp"
+            android:background="@drawable/bg_active"
+            android:fontFamily="@font/basiercircle_semibold"
+            android:gravity="center"
+            android:text="@string/label_send_email"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/basier_circle"
+            android:gravity="center"
+            android:text="@string/label_cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/steel"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toBottomOf="@id/btn_send_email" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

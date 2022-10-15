@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/customer_home_fragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/label_home" />
+    <item
+        android:id="@+id/customer_menu_fragment"
+        android:icon="@drawable/ic_menu"
+        android:title="@string/label_menu"
+        tools:targetApi="o" />
+</menu>

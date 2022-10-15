@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/service_provider_bottom_navigation"
+    app:startDestination="@id/service_home_fragment">
+
+    <fragment
+        android:id="@+id/service_home_fragment"
+        android:name="com.codesses.e_serve.serviceProvider.fragment.ServiceHomeFragment"
+        android:label="fragment_service_home"
+        tools:layout="@layout/fragment_service_home" />
+    <fragment
+        android:id="@+id/service_menu_fragment"
+        android:name="com.codesses.e_serve.serviceProvider.fragment.ServiceMenuFragment"
+        android:label="ServiceMenuFragment" />
+</navigation>

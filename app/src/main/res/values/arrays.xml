@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    TODO: Roles -->
+    <array name="user_role">
+        <item>@string/label_role</item>
+        <item>@string/role_customer</item>
+        <item>@string/role_mechanic</item>
+        <item>@string/role_rescue</item>
+    </array>
+
+</resources>

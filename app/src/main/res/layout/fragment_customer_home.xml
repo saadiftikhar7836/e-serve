@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".customer.fragment.CustomerHomeFragment">
+
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/choose_mechanic"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/circle_white"
+            android:fontFamily="@font/basiercircle_medium"
+            android:padding="@dimen/_13sdp"
+            android:src="@drawable/ic_mechanic"
+            app:layout_constraintEnd_toStartOf="@id/choose_rescue"
+            app:layout_constraintTop_toTopOf="@id/choose_rescue" />
+
+        <ImageView
+            android:id="@+id/choose_rescue"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@drawable/circle_white"
+            android:padding="@dimen/_14sdp"
+            android:src="@drawable/ic_rescue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/current_location"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="@drawable/circle_white"
+            android:padding="@dimen/_13sdp"
+            android:src="@drawable/ic_target"
+            android:translationZ="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

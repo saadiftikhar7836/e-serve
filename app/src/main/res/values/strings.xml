@@ -1,0 +1,160 @@
+<resources>
+    <string name="app_name">E-Serve</string>
+
+
+    <!--    TODO: Shared Preference-->
+    <string name="shared_preference">Shared_Preference</string>
+
+
+    <!--    TODO: Intents-->
+    <string name="intent_user">user</string>
+    <string name="intent_open_full_screen_image">image_uri</string>
+    <string name="intent_notification_type">noti_type</string>
+    <string name="intent_post_user_id">post_user_id</string>
+    <string name="intent_username">username</string>
+    <string name="intent_profile_url">profile_url</string>
+    <string name="intent_fcm_token">fcm_token</string>
+
+
+    <!--    TODO: Messages -->
+    <string name="enter">Enter</string>
+    <string name="pass_not_match">Password do not match</string>
+    <string name="pass_must_match">New password must be different</string>
+    <string name="creating_acc">Your account is being created.</string>
+    <string name="signing_in">Logging In…</string>
+    <string name="uploading">Uploading…</string>
+    <string name="data_being_fetched">Data is being fetched</string>
+    <string name="plz_w8">Please wait</string>
+    <string name="email_verify_msg">"Verification email sent to your email id. Please verify before login"</string>
+    <string name="empty_auth_type">Choose Sign In Method</string>
+    <string name="not_register_user">This User Is Not Registered.</string>
+    <string name="pass_updated">Password Updated Successfully</string>
+    <string name="profile_updated">Profile updated successfully</string>
+    <string name="dots" translatable="false">..</string>
+    <string name="title_you_re_a">You\'re a</string>
+    <string name="invalid_email_format">Email is not correctly formatted</string>
+    <string name="invalid_contact_no_format">Phone number is not correctly formatted</string>
+    <string name="invalid_password_format">Password not correctly formatted</string>
+    <string name="invalid_address_format">Address not correctly formatted</string>
+    <string name="password_required">Password required</string>
+    <string name="invalid_confirm_password_format">Confirm password not correctly formatted</string>
+    <string name="no_user_found_against_email">No user found against this email</string>
+    <string name="check_email">Please Check Your Email</string>
+    <string name="not_available">Not available</string>
+
+    <!--    TODO: Titles-->
+    <string name="create_account">Create Account</string>
+
+    <string name="label_create">Create</string>
+    <string name="label_already_register">Already register</string>
+    <string name="label_login">Login</string>
+    <string name="label_logout">Logout</string>
+    <string name="label_new_user">New user?</string>
+    <string name="label_create_account">Create account</string>
+    <string name="label_send_email">Send email</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_reset_pass">Reset password</string>
+    <string name="label_home">Home</string>
+    <string name="label_menu">Menu</string>
+    <string name="label_signout_surety">Are you sure you want to Logout</string>
+    <string name="label_confirm_cancel">Are you sure you want to cancel?</string>
+    <string name="label_no">No</string>
+    <string name="label_yes">Yes</string>
+    <string name="label_update">Update</string>
+    <string name="label_edit_profile">Edit profile</string>
+    <string name="label_mechanic">Mechanic</string>
+    <string name="label_rescue">Rescue</string>
+    <string name="label_address">Address</string>
+
+
+    <!--    TODO: Texts-->
+    <string name="text_enable_gps">Enable GPS</string>
+    <string name="text_gps_not_enable">GPS not enabled</string>
+    <string name="no_service_provider">There is no service provider available at the moment</string>
+
+    <!--    TODO: Title-->
+    <string name="title_profile">Profile</string>
+
+
+    <!--    TODO: Authentication: User Sign Up  -->
+    <string name="name">Name</string>
+    <string name="business_name">Business Name</string>
+    <string name="full_name">Full Name *</string>
+    <string name="email">Email Address *</string>
+    <string name="phone_no">Phone No *</string>
+    <string name="choose_location">Select location</string>
+    <string name="service_station_name">Service Station Name *</string>
+    <string name="clinic_name">Clinic Name *</string>
+    <string name="pass">Password *</string>
+    <string name="confirm_pass">Confirm Password *</string>
+    <string name="forgot_pass">forgot password?</string>
+    <string name="back">Back</string>
+    <string name="old_pass">Old Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="change_pass">Change password</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="label_about_us">About Us</string>
+    <string name="desc_about_us">Our shop is your mobile. E-serve is designed for user to find a mechanic and doctor any time and anywhere. Our mobile mechanic workshop and medical practitioner will come to you anywhere you want. E-serve provides instant help to the users. Service will be done at your location. All it takes is a click of a few buttons and you will have a mechanic on the way.  E-serve will save your time and save you from trouble.\n\nE-serve is connecting service providers (mechanic/medical practitioners) through our online platform. our customers and service providers can use our app which is designed for efficiency and ease of use.</string>
+
+
+    <!--    TODO: User roles-->
+    <string name="label_role">Role</string>
+    <string name="role_customer">customer</string>
+    <string name="role_mechanic">mechanic</string>
+    <string name="role_rescue">rescue</string>
+
+
+    <!--    Google map api key-->
+    <string name="google_maps_api_key" translatable="false">AIzaSyBLRUzQ9o-ZR5Wo0A2MCp-YmZEVy-0-y4U</string>
+<!--    <string name="google_maps_api_key" translatable="false">AIzaSyAHbNPtLlsTYAQ7kpjrvyneK5GjG8xZRoc</string>  elpr api-->
+
+
+    <!--    TODO: Toast messages-->
+    <string name="toast_permission_denied">Permission denied</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="type_a_message_here">message here</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat, nunc eget volutpat viverra, lacus ligula venenatis nulla,         in accumsan eros eros nec ipsum. Fusce eget massa id lorem blandit lobortis.         Donec lacus ligula, commodo quis eleifend ac, rhoncus sed mi. Curabitur luctus justo         vel consequat fermentum. Donec facilisis elit in sem suscipit pharetra. Curabitur porta et dolor eget pretium.         Mauris quam augue, interdum nec tempor vitae, consectetur at erat.</string>
+    <string name="sending">Sending…</string>
+    <string name="please_wait">please wait</string>
+    <string name="new_message">you have new message</string>
+
+    <!--    TODO: Availability status-->
+    <string name="label_available">Available</string>
+    <string name="status_online_mode">You are ready to provide service</string>
+    <string name="status_offline_mode">You are not available to provide service</string>
+
+
+    <!--    TODO: Service home screen-->
+    <string name="label_dashboard">Dashboard</string>
+    <string name="label_active_request">Active Request</string>
+    <string name="label_message_request">Message Requests</string>
+    <string name="label_total_orders">Total Orders</string>
+
+    <string name="label_request">Request</string>
+
+
+    <!--    TODO: User home screen-->
+    <string name="label_message">Message</string>
+
+
+    <!--    TODO: Confirmation dialog-->
+    <string name="text_navigation_surety">Are you sure you want to start navigation?</string>
+    <string name="label_navigation">Navigate</string>
+    <string name="stop">stop</string>
+
+
+    <!--    TODO: Routing activity-->
+    <!--    <string name="is_nav_running">is_nav_running</string>-->
+    <!--    <string name="is_rate_experience_ready">is_rate_experience_ready</string>-->
+
+    <!--    TODO: Ratings-->
+    <string name="label_ratings">Ratings</string>
+    <string name="label_payment">Payment</string>
+    <string name="rate_your_experience">Rate your experience</string>
+    <string name="hint_tell_your_exp">Tell us about your experience (max 100)</string>
+
+</resources>
