@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/customer_home_fragment"
-        android:name="com.codesses.e_serve.customer.fragment.CustomerHomeFragment"
+        android:name="com.eserve.android.customer.fragment.CustomerHomeFragment"
         android:label="fragment_customer_home"
         tools:layout="@layout/fragment_customer_home" />
     <fragment
         android:id="@+id/customer_menu_fragment"
-        android:name="com.codesses.e_serve.customer.fragment.CustomerMenuFragment"
+        android:name="com.eserve.android.customer.fragment.CustomerMenuFragment"
         android:label="fragment_customer_menu"
         tools:layout="@layout/fragment_customer_menu" />
 </navigation>
