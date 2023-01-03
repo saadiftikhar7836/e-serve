@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.codesses.e_serve">
+    package="com.eserve.android">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- To request foreground location access, declare one of these permissions. -->
@@ -18,41 +18,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Eserve">
         <activity
-            android:name=".activity.ServicerFeedbackActivity"
+            android:name="com.eserve.android.activity.ServicerFeedbackActivity"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
-            android:name=".activity.AboutUsActivity"
+            android:name="com.eserve.android.activity.AboutUsActivity"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
-            android:name=".serviceProvider.activity.UserRequestActivity"
+            android:name="com.eserve.android.serviceProvider.activity.UserRequestActivity"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
-            android:name=".activity.ChatRoomActivity"
+            android:name="com.eserve.android.activity.ChatRoomActivity"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
-            android:name=".activity.RoutingActivity"
+            android:name="com.eserve.android.activity.RoutingActivity"
             android:exported="true"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
-            android:name=".serviceProvider.activity.ServiceEditProfileActivity"
+            android:name="com.eserve.android.serviceProvider.activity.ServiceEditProfileActivity"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
-            android:name=".customer.activity.CustomerEditProfileActivity"
+            android:name="com.eserve.android.customer.activity.CustomerEditProfileActivity"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
-            android:name=".serviceProvider.activity.ServiceMainActivity"
+            android:name="com.eserve.android.serviceProvider.activity.ServiceMainActivity"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
-            android:name=".customer.activity.CustomerMainActivity"
+            android:name="com.eserve.android.customer.activity.CustomerMainActivity"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
-            android:name=".auth.SignUpActivity"
+            android:name="com.eserve.android.auth.SignUpActivity"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
-            android:name=".auth.LoginActivity"
+            android:name="com.eserve.android.auth.LoginActivity"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
-            android:name=".activity.SplashActivity"
+            android:name="com.eserve.android.activity.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,10 +67,10 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <service android:name=".service.ForegroundLocationService" />
-        <service android:name=".service.LocationService" />
+        <service android:name="com.eserve.android.service.ForegroundLocationService" />
+        <service android:name="com.eserve.android.service.LocationService" />
         <service
-            android:name=".fcm.MyFirebaseMessagingService"
+            android:name="com.eserve.android.fcm.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
