@@ -19,15 +19,19 @@
         android:theme="@style/Theme.Eserve">
         <activity
             android:name="com.eserve.android.activity.ServicerFeedbackActivity"
+            android:exported="false"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
             android:name="com.eserve.android.activity.AboutUsActivity"
+            android:exported="false"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
             android:name="com.eserve.android.serviceProvider.activity.UserRequestActivity"
+            android:exported="false"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
             android:name="com.eserve.android.activity.ChatRoomActivity"
+            android:exported="false"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
             android:name="com.eserve.android.activity.RoutingActivity"
@@ -35,24 +39,31 @@
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
             android:name="com.eserve.android.serviceProvider.activity.ServiceEditProfileActivity"
+            android:exported="false"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
             android:name="com.eserve.android.customer.activity.CustomerEditProfileActivity"
+            android:exported="false"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
             android:name="com.eserve.android.serviceProvider.activity.ServiceMainActivity"
+            android:exported="false"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
             android:name="com.eserve.android.customer.activity.CustomerMainActivity"
+            android:exported="false"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
             android:name="com.eserve.android.auth.SignUpActivity"
+            android:exported="false"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
             android:name="com.eserve.android.auth.LoginActivity"
+            android:exported="false"
             android:theme="@style/AppPrimaryColorTheme" />
         <activity
             android:name="com.eserve.android.activity.SplashActivity"
+            android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,8 +78,12 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <service android:name="com.eserve.android.service.ForegroundLocationService" />
-        <service android:name="com.eserve.android.service.LocationService" />
+        <service
+            android:name="com.eserve.android.service.ForegroundLocationService"
+            android:exported="true" />
+        <service
+            android:name="com.eserve.android.service.LocationService"
+            android:exported="true" />
         <service
             android:name="com.eserve.android.fcm.MyFirebaseMessagingService"
             android:exported="false">
