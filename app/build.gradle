@@ -6,13 +6,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion 32
+    compileSdkVersion 33
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.eserve.android"
         minSdkVersion 21
-        targetSdkVersion 32
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
 
@@ -22,7 +22,6 @@ android {
     buildTypes {
         release {
             minifyEnabled true
-            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -142,4 +141,5 @@ dependencies {
 
     //    Five start rating
     implementation 'me.zhanghai.android.materialratingbar:library:1.4.0'
+    implementation 'androidx.work:work-runtime:2.8.1'
 }
