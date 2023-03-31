@@ -37,15 +37,15 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
-        try {
+//        try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 sendNotification1(remoteMessage);
             } else {
                 sendNotification(remoteMessage);
             }
-        } catch (Exception e) {
-            Log.d("Notification_Crash", "onMessageReceived: " + e.getMessage());
-        }
+//        } catch (Exception e) {
+//            Log.d("Notification_Crash", "onMessageReceived: " + e.getMessage());
+//        }
     }
 
     @Override
@@ -161,9 +161,10 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             }
 
             resultIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
             PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(),
                     1 /* Request code */, resultIntent,
-                    PendingIntent.FLAG_UPDATE_CURRENT);
+                    PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
 
             Uri defaultsound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
@@ -184,11 +185,10 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             } else if (title.equals("Reached")) {
                 resultIntent = new Intent(getApplicationContext(), RoutingActivity.class);
             }
-
             resultIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(),
                     1 /* Request code */, resultIntent,
-                    PendingIntent.FLAG_IMMUTABLE);
+                    PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
             Uri defaultsound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
             OreoNotification oreoNotification = new OreoNotification(this);
